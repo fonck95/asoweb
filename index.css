@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;800&display=swap');
+
+:root {
+  /* Paleta Corporativa ASOVICAM */
+  --color-primary: #1B4D3E;       /* Verde Bosque Profundo */
+  --color-primary-light: #2C6E49; /* Verde Hoja */
+  --color-accent: #D68C45;        /* Terracota / Ahuyama */
+  --color-accent-red: #C54B4B;    /* Rojo Sandía Suave */
+  --color-bg-off-white: #F9FAF8;  /* Blanco Humo */
+  --color-bg-dark: #121212;
+  
+  --text-main: #333333;
+  --text-muted: #666666;
+  --text-light: #ffffff;
+
+  /* Spacing & Layout */
+  --container-width: 1200px;
+  --header-height: 80px;
+  --border-radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--color-bg-off-white);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Scroll suave para toda la página */
+html {
+  scroll-behavior: smooth;
+}
