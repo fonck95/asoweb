@@ -52,4 +52,18 @@ a {
 /* Scroll suave para toda la página */
 html {
   scroll-behavior: smooth;
+  /* Compensar header fijo en scroll anchors */
+  scroll-padding-top: var(--header-height);
+}
+
+/* Focus visible para accesibilidad */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Mejora de rendimiento en animaciones */
+.reduce-motion {
+  animation: none !important;
+  transition: none !important;
 }
